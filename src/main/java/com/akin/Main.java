@@ -1,4 +1,6 @@
-import modules.blockchain.application.usecases.CreateBlockUseCase;
+package com.akin;
+
+import com.akin.modules.block.application.usecases.CreateBlockUseCase;
 
 public class Main {
     public static void main(String[] args) {

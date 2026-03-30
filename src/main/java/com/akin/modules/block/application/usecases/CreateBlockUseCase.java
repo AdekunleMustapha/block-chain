@@ -1,7 +1,7 @@
-package modules.blockchain.application.usecases;
+package com.akin.modules.block.application.usecases;
 
-import modules.blockchain.domain.entities.Block;
-import modules.blockchain.domain.valueobjects.Hash;
+import com.akin.modules.block.domain.entities.Block;
+import com.akin.modules.block.domain.valueobjects.Hash;
 
 public class CreateBlockUseCase {
 

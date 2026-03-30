@@ -1,4 +1,4 @@
-package modules.blockchain.domain.valueobjects;
+package com.akin.modules.block.domain.valueobjects;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 
@@ -28,6 +28,7 @@ public class Hash {
             for( String arg : args ) {
                 input.append(arg);
             }
+            // transformed string builder to string and converted it to bytes in standard UTF-8 bytes
             byte[] hashedBytes = digest.digest(input.toString().getBytes(StandardCharsets.UTF_8));
             StringBuilder hexString = new StringBuilder();
             // ensure hashed bytes are converted from signed bytes to unsigned bytes and convert to string

@@ -1,5 +1,5 @@
-package modules.blockchain.domain.entities;
-import modules.blockchain.domain.valueobjects.Hash;
+package com.akin.modules.block.domain.entities;
+import com.akin.modules.block.domain.valueobjects.Hash;
 
 import java.util.Date;
 
@@ -32,6 +32,7 @@ public class Block {
      * @param prevHash the previous block signature
      * @param data the transactions for the block
      * @param timestamp the time of block creation
+     * @throws IllegalArgumentException when prevHash or data is null
      * @return block object
      */
     public static Block create (Hash prevHash, String data, Date timestamp) {
